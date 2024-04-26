@@ -22,12 +22,19 @@
         .text-green {
             color: green
         }
+
+        .bg-color {
+            background-color: whitesmoke;
+            padding: 30px 60px;
+            border-color: whitesmoke;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
     <div id="app">
-        <button :class="active ? 'text-red': 'text-green'" @click="toggle">Click Me</button>
+        <button  type="button" class="bg-color" :class="active ? 'text-red': 'text-green'" @click="toggle">Click Me</button>
     </div>
      
 
